@@ -1,3 +1,9 @@
-services:
-  helloworld:
-    build: https://github.com/docker-library/hello-world.git
+version: '3'
+  # Sección de Servicios
+  services:
+    # Declaración del servicio miapache
+    miapache:
+      # El contenedor usará la imagen httpd de DockerHub
+      image: httpd
+      # Nombre del contenedor
+      container_name: web
